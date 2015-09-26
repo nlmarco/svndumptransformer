@@ -8,7 +8,6 @@ public class ContentHeader implements Cloneable {
 
 	private int leadingEmptyLineQty;
 	private Map<String, String> properties = new LinkedHashMap<>();
-//	private int trailingEmptyLineQty;
 
 	public ContentHeader() {
 	}
@@ -23,14 +22,6 @@ public class ContentHeader implements Cloneable {
 	public Map<String, String> getProperties() {
 		return properties;
 	}
-
-//	public int getTrailingEmptyLineQty() {
-//		return trailingEmptyLineQty;
-//	}
-//
-//	public void setTrailingEmptyLineQty(int trailingEmptyLineQty) {
-//		this.trailingEmptyLineQty = trailingEmptyLineQty;
-//	}
 
 	public void addPropertyFromLine(String line) {
 		if (line.endsWith("\n"))

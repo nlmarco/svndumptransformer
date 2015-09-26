@@ -18,10 +18,6 @@ public class PropContent implements Cloneable {
 		@SuppressWarnings("resource") // it's a byte-array, stupid!
 		ExtDataInputStream in = new ExtDataInputStream(new ByteArrayInputStream(data));
 
-//		String line = "";
-//		while (line.isEmpty() || line.equals('\n'))
-//			line = in.readUtf8Line();
-
 		String line = in.readUtf8Line();
 		while (! in.isEof()) {
 			if (! line.startsWith("K "))

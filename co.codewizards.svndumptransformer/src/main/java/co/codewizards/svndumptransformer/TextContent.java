@@ -1,7 +1,11 @@
 package co.codewizards.svndumptransformer;
 
 /**
- * Actual payload. Though it's called "TextContent", it does not necessarily contain text! It may be binary!
+ * Actual payload.
+ * <p>
+ * Though it's called "TextContent", it does not necessarily contain text! It may be binary!
+ * I used this name, because the SVN dump file uses it (e.g. in the header property "Text-content-length").
+ *
  * @author Marco หงุ่ยตระกูล-Schulze - marco at codewizards dot co
  */
 public class TextContent implements Cloneable {
