@@ -39,7 +39,7 @@ public class SvnDumpTransformer {
 			System.out.println("REPLACEMENTS - pairs of replacement map entries. Every 1st value is replaced by every 2nd value.");
 			System.out.println();
 			System.out.println();
-			System.out.println("Examples:");
+			System.out.println("Example:");
 			System.out.println("  SvnDumpTransformer oldproduct.svndump newproduct.svndump OldProduct NewProduct oldProduct newProduct \"old product\" \"new product\"");
 			return;
 		}
