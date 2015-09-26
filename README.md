@@ -15,6 +15,8 @@ The destination file into which the transformed dump is written. Relative or abs
 ### REPLACEMENTS
 Pairs of strings to be replaced. Each 1st value is a string to be searched and replaced by the corresponding 2nd value. This is case-sensitive!
 
+The replacement-pairs are applied in the same order in which they're specified here.
+
 ## Example
 java -jar co.codewizards.svndumptransformer-1.0.jar oldproduct.svndump newproduct.svndump OldProduct NewProduct oldProduct newProduct "old product" "new product"
 
