@@ -19,7 +19,7 @@ import java.util.UUID;
  */
 public class SvnDumpTransformer {
 
-	private static final int MEGABYTE = 1024 * 1024;
+	private static final int MEBIBYTE = 1024 * 1024;
 
 	private File inputFile;
 	private File outputFile;
@@ -258,7 +258,7 @@ public class SvnDumpTransformer {
 		ContentHeader header = new ContentHeader();
 		String line;
 		while (! in.isEof()) {
-			in.mark(MEGABYTE);
+			in.mark(MEBIBYTE);
 			line = in.readUtf8Line();
 			if (isLineEmpty(line))
 				header.setLeadingEmptyLineQty(header.getLeadingEmptyLineQty() + 1);
