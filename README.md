@@ -16,6 +16,6 @@ The destination file into which the transformed dump is written. Relative or abs
 Pairs of strings to be replaced. Each 1st value is a string to be searched and replaced by the corresponding 2nd value. This is case-sensitive!
 
 ## Example
-java -jar co.codewizards.svndumptransformer-1.0.jar oldproduct.svndump newproduct.svndump OldProduct NewProduct oldProduct newProduct \"old product\" \"new product\"
+java -jar co.codewizards.svndumptransformer-1.0.jar oldproduct.svndump newproduct.svndump OldProduct NewProduct oldProduct newProduct "old product" "new product"
 
 This would read the file named 'oldproduct.svndump' and write the file 'newproduct.svndump' in the current directory. It would search for occurrences of 'OldProduct', 'oldProduct' and 'old product'. They would be replaced by 'NewProduct', 'newProduct' and 'new product' respectively.
