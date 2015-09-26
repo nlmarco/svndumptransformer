@@ -22,6 +22,12 @@ The replacement-pairs are applied in the same order in which they're specified h
 
 This would read the file named 'oldproduct.svndump' and write the file 'newproduct.svndump' in the current directory. It would search for occurrences of 'OldProduct', 'oldProduct' and 'old product'. They would be replaced by 'NewProduct', 'newProduct' and 'new product' respectively.
 
+# Download
+
+[co.codewizards.svndumptransformer-1.0.jar](https://github.com/nlmarco/svndumptransformer/blob/master/release/co.codewizards.svndumptransformer-1.0.jar?raw=true) (2015-09-26)
+
+...or simply clone this repository and compile it yourself ;-)
+
 # Complete workflow
 
 First, you have to generate an SVN dump using the following command:
